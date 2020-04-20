@@ -1,6 +1,6 @@
 {
 "activity": {
-    "streaming": ,
+    "streaming": true,
     "game": "mkoniec"
   }
 

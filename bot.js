@@ -13,24 +13,17 @@ config({
 
 client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
-
-    client.user.setPresence({
-        status: "online",
-        game: {
-            name: "me getting developed",
-            type: "WATCHING"
-        }
     }); 
 })
 
 
-bot​.​on​(​"​ready​"​, ​async​ () ​=>​ {
-  ​console​.​log​(​`​${​bot​.​user​.​username​}​ is ready for action!​`​);
-  ​if​ (​config​.​activity​.​streaming​ ​==​ ​true​) {
-    ​bot​.​user​.​setActivity​(​config​.​activity​.​game​, {url​:​ ​'​https://twitch.tv/mkoniec'​});
-  } ​else​ {
-    ​bot​.​user​.​setActivity​(​config​.​activity​.​game​, {type​:​ ​'​WATCHING​'​});​ //​PLAYING, LISTENING, WATCHING​
-    ​bot​.​user​.​setStatus​(​'​dnd​'​); ​//​ dnd, idle, online, invisible​
+bot.on("ready", async () => {
+  console.log(`${bot.user.username} is ready for action!`);
+  if (config.activity.streaming == true) {
+    bot.user.setActivity(config.activity.game, {url: 'https://twitch.tv/mkoniec'});
+  } else {
+    bot.user.setActivity(config.activity.game, {type:'WATCHING'}); //PLAYING, LISTENING, WATCHING
+    bot.user.setStatus('dnd'); //dnd, idle, online, invisible
   }
 });
 

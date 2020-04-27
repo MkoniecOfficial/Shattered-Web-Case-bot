@@ -18,7 +18,7 @@ const client = new Client({
     disableEveryone: true
 })
 
-bot.on('message', message => {
+client.on('message', message => {
     let args = message.content.substring(PREFIX.length).split(" ");
  
     switch (args[0]) {

@@ -55,15 +55,7 @@ client.on("message", async message => {
 
         const market = require('steam-market-pricing');
         
-        const names = [
-            'Shattered Web Case',
-            'Shattered Web Case'
-          ];
-          
-          const name = [
-            'Shattered Web Case',
-          ];
-          
+
           const msg = await message.channel.send(`Cena Shattered Web Case wynosi`)
             const msgd = await message.channel.send(`created by mkoniec`)
         market.getItemPrice(730, 'Shattered Web Case', [currency = 6]).then(item => msgd.edit(item.lowest_price))

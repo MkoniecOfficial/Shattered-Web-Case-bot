@@ -73,7 +73,7 @@ client.on("message", async message => {
     }
  
     
-    if (cmd === "Support") {
+    if (cmd === "support") {
         const msg= await message.channel.send(`https://discord.gg/4YWtHNr`)
     }
     

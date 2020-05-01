@@ -41,6 +41,11 @@ client.on("message", async message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
 
+    if (cmd === "support") {
+        const msg= await message.channel.send(`https://discord.gg/4YWtHNr`)
+    }
+
+
 
     if (cmd === "ping") {
         // Send a message
@@ -69,13 +74,12 @@ client.on("message", async message => {
         market.getItemPrice(730, 'Shattered Web Case', [currency = 6]).then(item => msgd.edit(item.lowest_price))
         
 
-         
+
+     
     }
- 
+
     
-    if (cmd === "support") {
-        const msg= await message.channel.send(`https://discord.gg/4YWtHNr`)
-    }
+    
     
 
 });

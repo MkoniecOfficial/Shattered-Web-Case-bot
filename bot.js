@@ -55,6 +55,8 @@ client.on("message", async message => {
         const msg= await message.channel.send("Leży Jerzy na wieży i nie wierzy że leży na wierzy a jednak Jerzy leży na wierzy  Leży Jerzy na wieży i nie wierzy że leży na wierzy a jednak Jerzy leży na wierzy.", {
             tts: true
            })
+           msg.edit(`¯\_(ツ)_/¯`)
+           msg.edit(Leży Jerzy na wieży i nie wierzy że leży na wierzy a jednak Jerzy leży na wierzy  Leży Jerzy na wieży i nie wierzy że leży na wierzy a jednak Jerzy leży na wierzy.)
     }
 
 

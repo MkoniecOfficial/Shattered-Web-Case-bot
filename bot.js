@@ -69,11 +69,13 @@ client.on("message", async message => {
         market.getItemPrice(730, 'Shattered Web Case', [currency = 6]).then(item => msgd.edit(item.lowest_price))
         
 
-        
-
-     
+         
     }
-
+ 
+    
+    if (cmd === "Server") {
+        const msg= await message.channel.send(`https://discord.gg/4YWtHNr`)
+    }
     
 
 });

@@ -59,6 +59,13 @@ client.on("message", async message => {
            msg.edit(`Leży Jerzy na wieży i nie wierzy że leży na wierzy a jednak Jerzy leży na wierzy  Leży Jerzy na wieży i nie wierzy że leży na wierzy a jednak Jerzy leży na wierzy.`)
     }
 
+        if (cmd === "maluch") {
+        const msg= await message.channel.send("r r r r r  r r r r r r r rrrrrrrrrrrrrr r  r r r r rrrrrrrrrrrrr r  r r r r r  rrrrrrrrrrrrrrrr", {
+            tts: true
+           })
+           msg.edit(`Odpalam malucha a co ?`)
+    }
+    
 
     if (cmd === "gdańsk") {
         const msg= await message.channel.send("Gdy pomorze nie pomoże to pomorze morze może a gdy może nie pomorze to pomorze morze Gdy pomorze nie pomoże to pomorze może Gdańsk.", {

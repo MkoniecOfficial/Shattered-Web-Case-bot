@@ -42,7 +42,26 @@ client.on("message", async message => {
     const cmd = args.shift().toLowerCase();
 
     if (cmd === "support") {
-        const msg= await message.channel.send(`https://discord.gg/4YWtHNr`)
+        const msg= await message.channel.send(`Support server - https://discord.gg/4YWtHNr`)
+    }
+
+
+    if (cmd === "Creator") {
+        const msg= await message.channel.send(`Bot Creator is Mkoniec#5303`)
+    }
+
+
+    if (cmd === "Jerzy") {
+        const msg= await message.channel.send("Leży Jerzy na wieży i nie wierzy że leży na wierzy a jednak Jerzy leży na wierzy  Leży Jerzy na wieży i nie wierzy że leży na wierzy a jednak Jerzy leży na wierzy.", {
+            tts: true
+           })
+    }
+
+
+    if (cmd === "Gdańsk") {
+        const msg= await message.channel.send("Gdy pomorze nie pomoże to pomorze morze może a gdy może nie pomorze to pomorze morze Gdy pomorze nie pomoże to pomorze może Gdańsk.", {
+            tts: true
+           })
     }
 
 

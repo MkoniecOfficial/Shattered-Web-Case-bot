@@ -52,7 +52,7 @@ client.on("message", async message => {
 
 
     if (cmd === "jerzy") {
-        const msg= await message.channel.send("Leży Jerzy na wieży i nie wierzy że leży na wierzy a jednak Jerzy leży na wierzy  Leży Jerzy na wieży i nie wierzy że leży na wierzy a jednak Jerzy leży na wierzy.", {
+        const msg= await message.channel.send("Leży Jerzy na wieży i nie wierzy że leży na wieży a jednak obok też leży Jerzy na wieży i nie wierzy że leży na wieży a obok niego też Leży Jerzy na wieży i nie wierzy że leży na wieży a jednak obok też Leży Jerzy na wieży i nie wierzy że leży na wieży a za nim też Leży Jerzy na wieży i nie wierzy że leży na wieży a jednak stoi.", {
             tts: true
            })
            msg.edit(`¯\_(ツ)_/¯`)

@@ -106,7 +106,7 @@ client.on("message", async message => {
      
     }
     
-if (cmd === "cena Planet 4546B Postcard") {
+if (cmd === "cena_Planet_4546B_Postcard") {
         // Send a message about case
 
         const market = require('steam-market-pricing');

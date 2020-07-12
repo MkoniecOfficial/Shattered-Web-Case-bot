@@ -113,7 +113,7 @@ client.on("message", async message => {
           
 const msg = await message.channel.send(`Cena Planet 4546B Postcard`)
   const msgd = await message.channel.send(`created by mkoniec`)
-market.getItemPrice(264710, 'Planet 4546B Postcard', [currency = 6]).then(item => msgd.edit(item.lowest_price))
+market.getItemPrice(264710, 'Planet 4546B Postcard', [currency = 6]).then(item => msgd.edit(item.median_price))
         
 
 

@@ -105,7 +105,27 @@ client.on("message", async message => {
 
      
     }
+    
+if (cmd === "cena Planet 4546B Postcard") {
+        // Send a message about case
 
+        const market = require('steam-market-pricing');
+        
+     
+          
+          const msg = await message.channel.send(`Cena Planet 4546B Postcard`)
+            const msgd = await message.channel.send(`created by mkoniec`)
+        market.getItemPrice(264710, 'Planet 4546B Postcard', [currency = 6]).then(item => msgd.edit(item.lowest_price))
+      
+        (function(){
+             market.getItemPrice(264710, 'Planet 4546B Postcard', [currency = 6]).then(item => msgd.edit(item.lowest_price))
+    // do some stuff             60000 to 1s
+    setTimeout(arguments.callee, 300000);
+})();
+
+
+     
+    }
     
     
     

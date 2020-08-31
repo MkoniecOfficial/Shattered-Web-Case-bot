@@ -25,7 +25,7 @@ client.on("ready", () => {
 client.on("message", async message => {
     const prefix = "!";
 
-    // If the author's a bot, return
+    // If the author's a bot, return.
     // If the message was not sent in a server, return
     // If the message doesn't start with the prefix, return
     if (message.author.bot) return;

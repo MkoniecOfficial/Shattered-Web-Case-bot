@@ -124,5 +124,5 @@ market.getItemPrice(264710, 'Planet 4546B Postcard', [currency = 6]).then(item =
     
 
 });
-
+//xd
 client.login(process.env.TOKEN);

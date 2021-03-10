@@ -83,24 +83,29 @@ client.on("message", async message => {
         msg.edit(`🏓 Pong!\nLatency is ${Math.floor(msg.createdTimestap - message.createdTimestap)}ms\nAPI Latency is ${Math.round(client.ping)}ms`);
     }
 
- // NEW 2021
+// NEW 2021
 
 
 
-if (cmd === "invprice") {
-    const msg= await message.channel.send("Price of this inventory is", {
+if (cmd === "mkoniecinvprice") {
+
+
+    const msg= await message.channel.send("Price of this inventory is"+(
+
+        fetch(linkdocsgob,)
+        .then(response => response.json())
+        .then(data => console.log(data.value))), {
        
        })
+       const steamID = "76561198290132822"
+       const linkdocsgob = ("http://csgobackpack.net/api/GetInventoryValue/?id="+(steamID))
        msg.edit(fetch("http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822").then(body => msg.edit(body.value)))
 }
+// ^ beta
 
-
-
-
-
+// "http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822"
 
 // NEW 2021
-    
     
     
     

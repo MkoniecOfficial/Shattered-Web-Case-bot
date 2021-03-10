@@ -1,7 +1,9 @@
+const fetch = require('node-fetch');
+const got = require('got');
 const { Client, RichEmbed } = require("discord.js");
 const { config } = require("dotenv");
 const market = require('steam-market-pricing');
-// aha2
+// jd
 const client = new Client({
     disableEveryone: true
 })
@@ -75,13 +77,6 @@ client.on("message", async message => {
 
 
 
-    if (cmd === "ping") {
-        // Send a message
-        const msg = await message.channel.send(`🏓 Pinging....`);
-
-        // Edit the message
-        msg.edit(`🏓 Pong!\nLatency is ${Math.floor(msg.createdTimestap - message.createdTimestap)}ms\nAPI Latency is ${Math.round(client.ping)}ms`);
-    }
 
 // NEW 2021
 
@@ -106,9 +101,15 @@ if (cmd === "mkoniecinvprice") {
 // "http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822"
 
 // NEW 2021
-    
-    
-    
+
+    if (cmd === "ping") {
+        // Send a message
+        const msg = await message.channel.send(`🏓 Pinging....`);
+
+        // Edit the message
+        msg.edit(`🏓 Pong!\nLatency is ${Math.floor(msg.createdTimestap - message.createdTimestap)}ms\nAPI Latency is ${Math.round(client.ping)}ms`);
+    }
+
     if (cmd === "case") {
         // Send a message about case
 

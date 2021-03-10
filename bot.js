@@ -1,7 +1,7 @@
 const { Client, RichEmbed } = require("discord.js");
 const { config } = require("dotenv");
 const market = require('steam-market-pricing');
-// aha
+// aha2
 const client = new Client({
     disableEveryone: true
 })

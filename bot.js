@@ -90,12 +90,27 @@ if (cmd === "mkoniecinvprice") {
 
         fetch(linkdocsgob,)
         .then(response => response.json())
-     .then(data => msg.edit("Price of this inventory is"+(data.value)))), {
+        .then(data => msg.edit("Price of this inventory is "+(data.value)))), {
        
        })
 
     //   msg.edit(fetch("http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822").then(body => msg.edit(body.value)))
 }
+
+if (cmd === "kuba963invprice") {
+
+
+    const msg= await message.channel.send("Price of this inventory is"+(
+
+        fetch('http://csgobackpack.net/api/GetInventoryValue/?id=76561198889016259')
+        .then(response => response.json())
+        .then(data => msg.edit("Price of this inventory is"+(data.value)))), {
+       
+       })
+
+    //   msg.edit(fetch("http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822").then(body => msg.edit(body.value)))
+}
+
 // ^ beta
 
 // "http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822"

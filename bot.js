@@ -94,12 +94,12 @@ if (cmd === "mkoniecinvprice") {
 
         fetch(linkdocsgob,)
         .then(response => response.json())
-        .then(data => console.log(data.value))), {
+        .then(data => msg.edit(data.value))), {
        
        })
        const steamID = "76561198290132822"
        const linkdocsgob = ("http://csgobackpack.net/api/GetInventoryValue/?id="+(steamID))
-       msg.edit(fetch("http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822").then(body => msg.edit(body.value)))
+    //   msg.edit(fetch("http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822").then(body => msg.edit(body.value)))
 }
 // ^ beta
 

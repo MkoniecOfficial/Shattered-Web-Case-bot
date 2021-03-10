@@ -83,7 +83,7 @@ client.on("message", async message => {
         msg.edit(`🏓 Pong!\nLatency is ${Math.floor(msg.createdTimestap - message.createdTimestap)}ms\nAPI Latency is ${Math.round(client.ping)}ms`);
     }
 
-    // NEW 2021
+ // NEW 2021
 
 
 
@@ -91,7 +91,7 @@ if (cmd === "invprice") {
     const msg= await message.channel.send("Price of this inventory is", {
        
        })
-       msg.edit(fetch("http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822").then(msg.edit(value)))
+       msg.edit(fetch("http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822").then(body => msg.edit(body.value)))
 }
 
 
@@ -100,7 +100,6 @@ if (cmd === "invprice") {
 
 
 // NEW 2021
-
     
     
     

@@ -90,7 +90,7 @@ if (cmd === "mkoniecinvprice") {
 
         fetch(linkdocsgob,)
         .then(response => response.json())
-        .then(data => msg.edit(data.value))), {
+     .then(data => msg.edit("Price of this inventory is"+(data.value)))), {
        
        })
 

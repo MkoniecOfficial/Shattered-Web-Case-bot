@@ -126,6 +126,20 @@ if (cmd === "kuba963invprice") {
     //   msg.edit(fetch("http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822").then(body => msg.edit(body.value)))
 }
     
+ if (cmd === "maksinvprice") {
+
+
+    const msg= await message.channel.send("Price of this inventory is "+(
+
+        fetch('http://csgobackpack.net/api/GetInventoryValue/?id=76561198856064682')
+        .then(response => response.json())
+        .then(data => msg.edit("Price of this inventory is "+ (data.value) + 'USD' ))), {
+       
+       })
+
+    //   msg.edit(fetch("http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822").then(body => msg.edit(body.value)))
+}
+       
     
     
     

@@ -140,7 +140,14 @@ if (cmd === "kuba963invprice") {
     //   msg.edit(fetch("http://csgobackpack.net/api/GetInventoryValue/?id=76561198290132822").then(body => msg.edit(body.value)))
 }
        
-    
+ if (cmd === "coolgangster") {
+
+
+    const msg= await message.channel.send(":coolgangster:")
+
+   
+}
+           
     
     
 // ^ beta

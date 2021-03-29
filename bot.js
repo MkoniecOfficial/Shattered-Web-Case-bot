@@ -80,7 +80,7 @@ client.on("message", async message => {
 
 // NEW 2021
 const steamID = "76561198290132822"
-const linkdocsgob = ("http://csgobackpack.net/api/GetInventoryValue/?id="+(steamID))
+const linkdocsgob = ("http://csgobackpack.net/api/GetInventoryValue/?id="+(steamID)+"&ref=1")
 
 
 if (cmd === "mkoniecinvprice") {
@@ -102,7 +102,7 @@ if (cmd === "kuba963invprice") {
 
     const msg= await message.channel.send("Price of this inventory is "+(
 
-        fetch('http://csgobackpack.net/api/GetInventoryValue/?id=76561198889016259')
+        fetch('http://csgobackpack.net/api/GetInventoryValue/?id=76561198889016259&ref=1')
         .then(response => response.json())
         .then(data => msg.edit("Price of this inventory is "+ (data.value) + 'USD' ))), {
        
@@ -117,7 +117,7 @@ if (cmd === "kuba963invprice") {
 
     const msg= await message.channel.send("Price of this inventory is "+(
 
-        fetch('http://csgobackpack.net/api/GetInventoryValue/?id=76561198921102620')
+        fetch('http://csgobackpack.net/api/GetInventoryValue/?id=76561198921102620&ref=1')
         .then(response => response.json())
         .then(data => msg.edit("Price of this inventory is "+ (data.value) + 'USD' ))), {
        
@@ -131,7 +131,7 @@ if (cmd === "kuba963invprice") {
 
     const msg= await message.channel.send("Price of this inventory is "+(
 
-        fetch('http://csgobackpack.net/api/GetInventoryValue/?id=76561198856064682')
+        fetch('http://csgobackpack.net/api/GetInventoryValue/?id=76561198856064682&ref=1')
         .then(response => response.json())
         .then(data => msg.edit("Price of this inventory is "+ (data.value) + 'USD' ))), {
        
